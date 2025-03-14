@@ -1,0 +1,72 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #ffe6f2; /* Soft pink background */
+    text-align: center;
+    color: #ff66b2; /* Cute pink text */
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff3385;
+}
+
+button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff0f5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn, .delete-btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background-color: #ffccff;
+    color: #660066;
+}
+
+.delete-btn {
+    background-color: #ffb3b3;
+    color: #800000;
+}
+
+.edit-btn:hover {
+    background-color: #ff99ff;
+}
+
+.delete-btn:hover {
+    background-color: #ff6666;
+}
