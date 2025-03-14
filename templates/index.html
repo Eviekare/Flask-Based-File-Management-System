@@ -23,11 +23,22 @@
             {% for file in files %}
                 <li>
                     {{ file }}  
-                    <a href="/update/{{ file }}" class="edit-btn">✏ Rename</a>
-                    <a href="/delete/{{ file }}" class="delete-btn">❌ Delete</a>
+                    <!-- Rename Form -->
+                    <form action="/update" method="post" style="display:inline;">
+                        <input type="hidden" name="old_filename" value="{{ file }}">
+                        <input type="text" name="new_filename" placeholder="New name" required>
+                        <button type="submit">✏ Rename</button>
+                    </form>
+                    
+                    <!-- Delete Form -->
+                    <form action="/delete" method="post" style="display:inline;">
+                        <input type="hidden" name="filename" value="{{ file }}">
+                        <button type="submit" class="delete-btn">❌ Delete</button>
+                    </form>
                 </li>
             {% endfor %}
         </ul>
     </div>
 </body>
 </html>
+
